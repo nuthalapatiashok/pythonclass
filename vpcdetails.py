@@ -3,9 +3,9 @@
 import boto3
 import sys
 
-#region = sys.argv[1]
-accesskey = sys.argv[2]
-secretkey = sys.argv[3]
+
+accesskey = sys.argv[1]
+secretkey = sys.argv[2]
 
 ec2 = boto3.resource('ec2',aws_access_key_id= accesskey, aws_secret_access_key= secretkey)
 vpc_client = boto3.client('ec2',aws_access_key_id= accesskey , aws_secret_access_key= secretkey )
