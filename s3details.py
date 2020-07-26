@@ -13,5 +13,5 @@ s3_details = boto3.client('s3',region_name= region,aws_access_key_id= accesskey,
 response_s3details = s3_details.list_buckets()
 #print (response_s3details['Buckets'])
 for each_bucket  in response_s3details['Buckets']:
-	print  each_bucket['Name'],each_bucket['CreationDate']
+	print  (each_bucket['Name'],each_bucket['CreationDate'])
 	#print each_bucket['CreationDate']
