@@ -10,7 +10,7 @@ def s3_fuction(writer):
 
 	empty_csv_disct = {}
 
-	client = boto3.client('s3', aws_access_key_id="AKIA4U4XQAUYLFAJO3SL", aws_secret_access_key="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")
+	client = boto3.client('s3', aws_access_key_id="", aws_secret_access_key="")
 
 	s3_response = client.list_buckets()
 
